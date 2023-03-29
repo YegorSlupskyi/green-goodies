@@ -6,7 +6,7 @@ export interface MobileMenuProps {
 
 const MobileMenu: React.FC<MobileMenuProps> = ({ show }) => {
   return (
-    <MobileMenuWrapper className={!show && 'hidden'}>
+    <MobileMenuWrapper className={show && 'show'}>
       <MenuBlock>
         <BlockHead>Instagram</BlockHead>
         <BlockText>@green_goodies</BlockText>

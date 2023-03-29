@@ -13,7 +13,7 @@ export const MobileMenuWrapper = styled.div`
   background-color: ${palette.primary};
   position: absolute;
   top: ${headerHeight.mobile};
-  left: 0;
+  left: -320px;
   transition: transform 350ms ${cubicBezier()};
   transform: translateX(0);
   z-index: 0;
@@ -23,8 +23,8 @@ export const MobileMenuWrapper = styled.div`
     height: calc(100vh - ${headerHeight.desktop});
   }
 
-  &.hidden {
-    transform: translateX(-320px);
+  &.show {
+    transform: translateX(320px);
   }
 `;
 

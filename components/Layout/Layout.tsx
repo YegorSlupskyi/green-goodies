@@ -51,7 +51,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             )}
           </HeaderWrapper>
         </Container>
-        <MobileMenu show={mobileMenuShown} />
+        {!desktop && <MobileMenu show={mobileMenuShown} />}
       </Header>
       {children}
     </>
