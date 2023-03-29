@@ -13,7 +13,9 @@ export const Header = styled.header`
   background-color: ${palette.primary};
   padding-top: 14px;
   padding-bottom: 14px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 1000;
 
   @media screen and (min-width: ${breakpoints.desktop}) {

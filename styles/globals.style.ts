@@ -21,17 +21,22 @@ export const primaryColor = '#89C0C0';
 export const secondaryColor = '#FFBDBD';
 export const primaryTextColor = '#FFFFFF';
 export const secondaryTextColor = '#344949';
+export const regularBgColor = '#FFFFFF';
 
 export const palette = {
   primary: primaryColor,
   secondary: secondaryColor,
   textPrimary: primaryTextColor,
   textSecondary: secondaryTextColor,
+  regular: regularBgColor,
 };
 
-export const Container = styled.div`
+export type ContainerProps = {
+  noPadding?: boolean;
+};
+export const Container = styled.div<ContainerProps>`
   margin: 0 auto;
-  padding: 0 15px;
+  padding: ${(props) => (props.noPadding ? '0' : '0 15px')};
 
   width: 100%;
 

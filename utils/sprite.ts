@@ -1,8 +1,17 @@
-const template = (icon: string,): string => `/icons/${icon}.svg`;
+const template = (icon: string): string => `/icons/${icon}.svg`;
 
-type IconMap = {
-  [icon: string]: string;
-}
+export type IconMap = {
+  burgerMenu: string;
+  logo: string;
+  organicProducts: string;
+  applePie: string;
+  macaroni: string;
+  croissant: string;
+  notFound: string;
+  punctuality: string;
+  blender: string;
+  location: string;
+};
 
 const icons: IconMap = {
   burgerMenu: template('burger-menu'),
@@ -15,6 +24,6 @@ const icons: IconMap = {
   punctuality: template('punctuality'),
   blender: template('blender'),
   location: template('location'),
-}
+};
 
 export default icons;
