@@ -24,6 +24,17 @@ export const HeroContainer = styled.div`
   @media screen and (min-width: ${breakpoints.mobile}) {
     width: ${breakpoints.mobile};
   }
+
+  @media screen and (min-width: ${breakpoints.tablet}) {
+    width: ${breakpoints.tablet};
+    height: 445px;
+  }
+
+  @media screen and (min-width: ${breakpoints.desktop}) {
+    width: ${breakpoints.desktop};
+    height: 670px;
+  }
+
 `;
 
 export const HeroImage = styled.div`

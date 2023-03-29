@@ -33,12 +33,18 @@ const Hero = () => {
         <>
           <HeroImage />
           <Logo>
-            <Icon icon={icons.logo} width={tablet ? 330 : 500} height={tablet ? 230 : 350} />
+            <Icon
+              icon={icons.logo}
+              width={tablet ? 330 : 500}
+              height={tablet ? 230 : 350}
+            />
           </Logo>
-          <HeroTextBlock>
-            <HeroHeader>Green Goodies</HeroHeader>
-            <HeroSubheader>Fulfills your sweet desires</HeroSubheader>
-          </HeroTextBlock>
+          <HeroContainer>
+            <HeroTextBlock>
+              <HeroHeader>Green Goodies</HeroHeader>
+              <HeroSubheader>Fulfills your sweet desires</HeroSubheader>
+            </HeroTextBlock>
+          </HeroContainer>
         </>
       )}
     </Wrapper>

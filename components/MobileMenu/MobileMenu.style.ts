@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { headerHeight } from '../Layout/Layout.style';
 import {
-  transitionTime,
   cubicBezier,
   breakpoints,
   palette,
