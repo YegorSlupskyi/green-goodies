@@ -1,3 +1,4 @@
+import Acquaintance from '@/components/Acquaintance';
 import Hero from '@/components/Hero';
 import WhyUs from '@/components/WhyUs';
 import Head from 'next/head';
@@ -14,6 +15,7 @@ export default function Home() {
       <main>
         <Hero />
         <WhyUs />
+        <Acquaintance />
       </main>
     </>
   );

@@ -6,6 +6,15 @@ export const Wrapper = styled.section`
   margin-top: 55px;
   color: ${palette.textSecondary};
   padding: 0 55px;
+  margin-bottom: 55px;
+
+  @media screen and (min-width: ${breakpoints.tablet}){
+    margin-bottom: 70px;
+  }
+
+  @media screen and (min-width: ${breakpoints.desktop}) {
+    margin-bottom: 100px;
+  }
 `;
 
 export const Header = styled.h2`
