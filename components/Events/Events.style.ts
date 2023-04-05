@@ -4,6 +4,14 @@ import { breakpoints, palette } from '@/styles/globals.style';
 export const Wrapper = styled.section`
   padding: 55px;
   background-color: ${palette.regular};
+
+  @media screen and (min-width: ${breakpoints.tablet}) {
+   padding: 70px;
+  }
+
+  @media screen and (min-width: ${breakpoints.desktop}) {
+    padding: 100px;
+  }
 `;
 
 export const Content = styled.div`
