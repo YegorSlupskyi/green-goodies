@@ -9,7 +9,10 @@ export default function Home() {
     <>
       <Head>
         <title>Green Goodies</title>
-        <meta name='description' content='Green Goodies | Fulfills your sweet desires' />
+        <meta
+          name='description'
+          content='Green Goodies | Fulfills your sweet desires'
+        />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
@@ -17,7 +20,7 @@ export default function Home() {
         <Hero />
         <WhyUs />
         <Acquaintance />
-        <Events/>
+        <Events />
       </main>
     </>
   );
