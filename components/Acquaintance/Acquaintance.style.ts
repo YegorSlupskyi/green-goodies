@@ -49,7 +49,7 @@ export const TextWrapper = styled.div`
   }
 
   @media screen and (min-width: ${breakpoints.desktop}) {
-    width: 540px; 
+    width: 540px;
     padding-top: 90px;
   }
 `;
@@ -115,5 +115,20 @@ export const Map = styled.div`
     width: calc(100vw - 770px);
     border-top-right-radius: 208px;
     border-bottom-right-radius: 208px;
+  }
+
+  iframe {
+    border-top-right-radius: 110px;
+    border-bottom-right-radius: 110px;
+
+    @media screen and (min-width: ${breakpoints.tablet}) {
+      border-top-right-radius: 165px;
+      border-bottom-right-radius: 165px;
+    }
+
+    @media screen and (min-width: ${breakpoints.desktop}) {
+      border-top-right-radius: 208px;
+      border-bottom-right-radius: 208px;
+    }
   }
 `;
