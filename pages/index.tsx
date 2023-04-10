@@ -1,6 +1,6 @@
 import Acquaintance from '@/components/Acquaintance';
 import Events from '@/components/Events/Events';
-import OrderForm from '@/components/Form';
+import OrderForm from '@/components/OrderForm';
 import Hero from '@/components/Hero';
 import WhyUs from '@/components/WhyUs';
 import Head from 'next/head';

@@ -8,6 +8,7 @@ import {
   Input,
   Submit,
 } from './OrderForm.style';
+import validateEmail from '@/helpers/validateEmail';
 
 type InputName = 'name' | 'email';
 
@@ -35,6 +36,10 @@ const OrderForm = () => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if(!validateEmail(email)) {
+      alert('Invalid email entered');
+      return;
+    }
     alert('We have received your order!');
     setName('');
     setEmail('');
