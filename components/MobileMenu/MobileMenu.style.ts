@@ -48,6 +48,6 @@ export const BlockText = styled.p`
   font-size: 18px;
   line-height: 1.22;
   &:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 `;
