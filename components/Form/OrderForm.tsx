@@ -1,4 +1,4 @@
-import { ChangeEvent, useState } from 'react';
+import { ChangeEvent, FormEvent, useState } from 'react';
 import {
   Wrapper,
   Content,
@@ -25,7 +25,7 @@ const OrderForm = () => {
       case inputNames.name:
         setName(e.target.value);
         break;
-      case inputNames.name:
+      case inputNames.email:
         setEmail(e.target.value);
         break;
       default:
@@ -33,11 +33,18 @@ const OrderForm = () => {
     }
   };
 
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    alert('We have received your order!');
+    setName('');
+    setEmail('');
+  };
+
   return (
     <Wrapper>
       <Content>
         <Header>Wanna order some sweets?</Header>
-        <Form>
+        <Form onSubmit={handleSubmit} >
           <Name>Leave your contacts here</Name>
           <div className='input-group'>
             <Input
@@ -46,6 +53,7 @@ const OrderForm = () => {
               onChange={handleInput}
               required
               type='text'
+              value={name}
             />
             <Input
               placeholder='Email'
@@ -53,9 +61,12 @@ const OrderForm = () => {
               onChange={handleInput}
               required
               type='email'
+              value={email}
             />
           </div>
-          <Submit>Contact Me</Submit>
+          <Submit type='submit'>
+            Contact Me
+          </Submit>
         </Form>
       </Content>
     </Wrapper>
