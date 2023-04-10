@@ -40,7 +40,7 @@ export const BlockHead = styled.div`
   color: ${palette.textPrimary};
   font-size: 20px;
   line-height: 1.2;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 `;
 
 export const BlockText = styled.p`
