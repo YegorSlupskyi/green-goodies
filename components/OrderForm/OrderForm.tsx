@@ -36,7 +36,7 @@ const OrderForm = () => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if(!validateEmail(email)) {
+    if (!validateEmail(email)) {
       alert('Invalid email entered');
       return;
     }
@@ -49,7 +49,7 @@ const OrderForm = () => {
     <Wrapper>
       <Content>
         <Header>Wanna order some sweets?</Header>
-        <Form onSubmit={handleSubmit} >
+        <Form onSubmit={handleSubmit}>
           <Name>Leave your contacts here</Name>
           <div className='input-group'>
             <Input
@@ -69,9 +69,7 @@ const OrderForm = () => {
               value={email}
             />
           </div>
-          <Submit type='submit'>
-            Contact Me
-          </Submit>
+          <Submit type='submit'>Contact Me</Submit>
         </Form>
       </Content>
     </Wrapper>
