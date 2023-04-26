@@ -61,36 +61,56 @@ export const DessertsList = styled.ul`
 `;
 
 export const DessertCard = styled.li`
-  &:nth-child(4n + 1) > div::before {
-    border-color: ${palette.primary};
+  @media (max-width: 799px) {
+    &:nth-child(4n + 1) > div::before {
+      border-color: ${palette.primary};
+    }
+
+    &:nth-child(4n + 2) > div::before {
+      border-color: ${palette.secondary};
+    }
+
+    &:nth-child(4n + 3) > div::before {
+      border-color: ${palette.secondary};
+    }
+
+    &:nth-child(4n) > div::before {
+      border-color: ${palette.primary};
+    }
+
+    &:nth-child(4n + 1) > button {
+      background-color: ${palette.secondary};
+    }
+
+    &:nth-child(4n + 2) > button {
+      background-color: ${palette.primary};
+    }
+
+    &:nth-child(4n + 3) > button {
+      background-color: ${palette.primary};
+    }
+
+    &:nth-child(4n) > button {
+      background-color: ${palette.secondary};
+    }
   }
 
-  &:nth-child(4n + 2) > div::before {
-    border-color: ${palette.secondary};
-  }
+  @media screen and (min-width: ${breakpoints.tablet}) {
+    &:nth-child(2n + 1) > div::before {
+      border-color: ${palette.primary};
+    }
 
-  &:nth-child(4n + 3) > div::before {
-    border-color: ${palette.secondary};
-  }
+    &:nth-child(2n) > div::before {
+      border-color: ${palette.secondary};
+    }
 
-  &:nth-child(4n) > div::before {
-    border-color: ${palette.primary};
-  }
+    &:nth-child(2n + 1) > button {
+      background-color: ${palette.secondary};
+    }
 
-  &:nth-child(4n + 1) > button {
-    background-color: ${palette.secondary};
-  }
-
-  &:nth-child(4n + 2) > button {
-    background-color: ${palette.primary};
-  }
-
-  &:nth-child(4n + 3) > button {
-    background-color: ${palette.primary};
-  }
-
-  &:nth-child(4n) > button {
-    background-color: ${palette.secondary};
+    &:nth-child(2n) > button {
+      background-color: ${palette.primary};
+    }
   }
 `;
 
