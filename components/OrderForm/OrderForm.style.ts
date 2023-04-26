@@ -21,7 +21,10 @@ export const Wrapper = styled.section`
 export const Content = styled.div`
   margin: 0 auto;
   line-height: 1.2;
-  width: 280px;
+
+  @media screen and (min-width: ${breakpoints.mobile}) {
+    width: 440px;
+  }
 
   @media screen and (min-width: ${breakpoints.tablet}) {
     width: 680px;
@@ -122,8 +125,7 @@ export const Submit = styled.button`
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: ${breakpoints.tablet}){
+  @media screen and (min-width: ${breakpoints.tablet}) {
     width: 350px;
   }
-
 `;

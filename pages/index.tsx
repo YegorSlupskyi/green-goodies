@@ -1,11 +1,16 @@
+import { useRef } from 'react';
 import Acquaintance from '@/components/Acquaintance';
 import Events from '@/components/Events/Events';
 import OrderForm from '@/components/OrderForm';
 import Hero from '@/components/Hero';
 import WhyUs from '@/components/WhyUs';
 import Head from 'next/head';
+import Desserts from '@/components/Desserts/Desserts';
 
 export default function Home() {
+
+  const orderFormRef = useRef<HTMLElement>();
+
   return (
     <>
       <Head>
@@ -22,7 +27,8 @@ export default function Home() {
         <WhyUs />
         <Acquaintance />
         <Events />
-        <OrderForm/>
+        <Desserts ref={orderFormRef}/>
+        <OrderForm ref={orderFormRef}/>
       </main>
     </>
   );

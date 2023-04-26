@@ -5,7 +5,7 @@ import { cubicBezier, breakpoints, palette } from '@/styles/globals.style';
 export const MobileMenuWrapper = styled.div`
   width: 320px;
   max-width: 320px;
-  height: calc(100vh - ${headerHeight.mobile} - 0.5px);
+  height: calc(100vh - ${headerHeight.mobile});
   background-color: ${palette.primary};
   position: absolute;
   top: ${headerHeight.mobile};

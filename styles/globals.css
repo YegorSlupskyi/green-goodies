@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Alegreya Sans';
   font-style: normal;
@@ -15,7 +19,8 @@ a {
   color: #fff;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #fff;
 }
 
@@ -45,6 +50,7 @@ button {
   border: none;
   background: none;
   cursor: pointer;
+  font-family: 'Alegreya Sans';
 }
 
 input {

@@ -1,4 +1,4 @@
-import { ChangeEvent, FormEvent, useState } from 'react';
+import { ChangeEvent, FormEvent, Ref, forwardRef, useState } from 'react';
 import {
   Wrapper,
   Content,
@@ -12,12 +12,14 @@ import validateEmail from '@/helpers/validateEmail';
 
 type InputName = 'name' | 'email';
 
+
+
 const inputNames = {
   name: 'name' as InputName,
   email: 'email' as InputName,
 };
 
-const OrderForm = () => {
+const OrderForm = forwardRef(function OrderForm(props, ref) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
 
@@ -46,7 +48,7 @@ const OrderForm = () => {
   };
 
   return (
-    <Wrapper>
+    <Wrapper ref={ref as Ref<HTMLElement>}>
       <Content>
         <Header>Wanna order some sweets?</Header>
         <Form onSubmit={handleSubmit}>
@@ -74,6 +76,6 @@ const OrderForm = () => {
       </Content>
     </Wrapper>
   );
-};
+});
 
 export default OrderForm;
