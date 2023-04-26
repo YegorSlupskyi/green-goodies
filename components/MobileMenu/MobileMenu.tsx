@@ -1,4 +1,10 @@
-import { BlockHead, MenuBlock, MobileMenuWrapper, BlockText } from './MobileMenu.style';
+import Link from 'next/link';
+import {
+  BlockHead,
+  MenuBlock,
+  MobileMenuWrapper,
+  BlockText,
+} from './MobileMenu.style';
 
 export interface MobileMenuProps {
   show: boolean;
@@ -18,8 +24,12 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ show }) => {
       </MenuBlock>
       <MenuBlock>
         <BlockHead>About us</BlockHead>
-        <BlockText>Organization info</BlockText>
-        <BlockText>Certificates</BlockText>
+        <BlockText>
+          <Link href='organization-info'>Organization info</Link>
+        </BlockText>
+        <BlockText>
+          <Link href='certificates'>Certificates</Link>
+        </BlockText>
       </MenuBlock>
     </MobileMenuWrapper>
   );

@@ -14,6 +14,7 @@ import icons from '@/utils/sprite';
 import { useDeviceType } from '@/hooks/useWindowSize';
 import Link from 'next/link';
 import MobileMenu from '../MobileMenu';
+import Footer from '../Footer/Footer';
 
 export interface LayoutProps {
   children: ReactNode;
@@ -54,6 +55,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {!desktop && <MobileMenu show={mobileMenuShown} />}
       </Header>
       {children}
+      <Footer/>
     </>
   );
 };
