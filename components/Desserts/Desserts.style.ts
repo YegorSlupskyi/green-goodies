@@ -61,20 +61,36 @@ export const DessertsList = styled.ul`
 `;
 
 export const DessertCard = styled.li`
-  &:nth-child(2n + 1) > div::before {
+  &:nth-child(4n + 1) > div::before {
     border-color: ${palette.primary};
   }
 
-  &:nth-child(2n) > div::before {
+  &:nth-child(4n + 2) > div::before {
     border-color: ${palette.secondary};
   }
 
-  &:nth-child(2n + 1) > button {
+  &:nth-child(4n + 3) > div::before {
+    border-color: ${palette.secondary};
+  }
+
+  &:nth-child(4n) > div::before {
+    border-color: ${palette.primary};
+  }
+
+  &:nth-child(4n + 1) > button {
     background-color: ${palette.secondary};
   }
 
-  &:nth-child(2n) > button {
+  &:nth-child(4n + 2) > button {
     background-color: ${palette.primary};
+  }
+
+  &:nth-child(4n + 3) > button {
+    background-color: ${palette.primary};
+  }
+
+  &:nth-child(4n) > button {
+    background-color: ${palette.secondary};
   }
 `;
 
@@ -84,7 +100,6 @@ export const ImageWrapper = styled.div`
   height: 133px;
   margin: 0 auto;
   margin-bottom: 10px;
-  cursor: pointer;
 
   &::before {
     content: '';

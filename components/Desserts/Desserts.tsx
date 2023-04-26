@@ -27,8 +27,8 @@ const Desserts = forwardRef<any>(function Desserts(props, ref) {
         <Header>Our desserts</Header>
         <DessertsList>
           {desserts.map((dessert) => (
-            <DessertCard key={dessert.title} >
-              <ImageWrapper onClick={onDessertClick}>
+            <DessertCard key={dessert.title}>
+              <ImageWrapper>
                 <Image
                   src={
                     mobile

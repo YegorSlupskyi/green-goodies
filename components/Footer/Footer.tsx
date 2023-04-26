@@ -25,7 +25,11 @@ const Footer = () => {
           </Group>
           <Group>
             <p className='header'>Instagram</p>
-            <p className='link'>@green_goodies</p>
+            <p className='link'>
+              <Link href='https://instagram.com/gregor_mikaelson?igshid=YmMyMTA2M2Y=' target='_blank'>
+                green@goodies.com
+              </Link>
+            </p>
           </Group>
           <Group>
             <p className='header'>About Us</p>

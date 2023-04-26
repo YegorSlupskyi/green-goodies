@@ -19,15 +19,14 @@ const Content = styled.div`
 `;
 
 const ImageWrapper = styled.div`
-  padding: 0 37px 0 28px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 
   @media screen and (min-width: ${breakpoints.tablet}) {
     padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
   }
 
   @media screen and (min-width: ${breakpoints.desktop}) {
@@ -41,6 +40,7 @@ const NotFoundText = styled.p`
   line-height: 1.2;
   text-align: center;
   margin: 0 auto;
+  color: ${palette.textSecondary};
 
   @media screen and (min-width: ${breakpoints.desktop}) {
     font-size: 25px;
