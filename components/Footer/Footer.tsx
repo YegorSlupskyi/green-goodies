@@ -15,7 +15,9 @@ const Footer = () => {
     <Wrapper>
       <Content>
         <LogoWrapper>
-          <Icon icon={icons.logo} width={100} height={70} />
+          <Link href='/'>
+            <Icon icon={icons.logo} width={100} height={70} />
+          </Link>
         </LogoWrapper>
         <Contacts>
           <Group>

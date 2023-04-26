@@ -39,7 +39,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <>
                 <BrandContainer>
                   <LogoWrapper>
-                    <Icon icon={icons.logo} width={100} height={70} />
+                    <Link href='/'>
+                      <Icon icon={icons.logo} width={100} height={70} />
+                    </Link>
                   </LogoWrapper>
                   <BrandName>Green Goodies</BrandName>
                 </BrandContainer>
@@ -55,7 +57,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {!desktop && <MobileMenu show={mobileMenuShown} />}
       </Header>
       {children}
-      <Footer/>
+      <Footer />
     </>
   );
 };
