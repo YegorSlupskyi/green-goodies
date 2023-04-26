@@ -15,15 +15,18 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ show }) => {
     <MobileMenuWrapper className={show && 'show'}>
       <MenuBlock>
         <BlockHead>Instagram</BlockHead>
-        <BlockText>@green_goodies</BlockText>
+        <BlockText>
+          <Link
+            href='https://instagram.com/gregor_mikaelson?igshid=YmMyMTA2M2Y='
+            target='_blank'
+          >
+            @green_goodies
+          </Link>
+        </BlockText>
       </MenuBlock>
       <MenuBlock>
         <BlockHead>Contacts</BlockHead>
-        <BlockText>
-          <Link href='https://instagram.com/gregor_mikaelson?igshid=YmMyMTA2M2Y=' target='_blank'>
-            green@goodies.com
-          </Link>
-        </BlockText>
+        <BlockText>green@goodies.com</BlockText>
         <BlockText>+380 666 3444 70</BlockText>
       </MenuBlock>
       <MenuBlock>
